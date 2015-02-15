@@ -1,14 +1,14 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 from setuptools import setup
 
 setup(
-    name="lepton",
+    name="myLwM2M",
     version="1.0.0",
-    description="Lightweight M2M lwm2m written in Python",
+    description="Lightweight M2M server written in Python",
     author="Alexander Ellwein",
-    author_email="lepton@ellwein.net",
+    author_email="mylwm2m@ellwein.net",
     license="MIT License",
-    install_requires=["aiocoap==0.1"]
+    install_requires=["aiocoap"]
 )
