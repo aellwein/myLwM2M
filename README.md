@@ -19,7 +19,7 @@ server implementation in Python 3.
   ``python setup.py install --user`` (user-local installation).
 
 ### License
-myLwM2M is licensed under the terms of [MIT License](LICENSE.md).
+myLwM2M is licensed under the terms of [MIT License](LICENSE).
 
 ### ToDo
 * ~~Register/Update/Delete~~
