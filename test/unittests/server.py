@@ -27,20 +27,20 @@ class ServerTest(unittest.TestCase):
 
     def test_post_without_endpoint_leads_to_bad_request_response(self):
         message = aiocoap.Message()
-        response = self.server.render_POST(message)
+        response = self.server.render_post(message)
         self.assertEqual(Code.BAD_REQUEST, asyncio.get_event_loop().run_until_complete(response).code)
 
     def test_post_without_payload_leads_to_bad_request_response(self):
         message = aiocoap.Message()
         message.opt.uri_query = ["ep=endpoint"]
-        response = self.server.render_POST(message)
+        response = self.server.render_post(message)
         self.assertEqual(Code.BAD_REQUEST, asyncio.get_event_loop().run_until_complete(response).code)
 
     def test_client_is_persisted_after_registration(self):
         message = aiocoap.Message()
         message.opt.uri_query = ["ep=endpoint"]
         message.payload = b"</3>,</0/1>"
-        response = self.server.render_POST(message)
+        response = self.server.render_post(message)
         self.assertEqual(Code.CREATED, asyncio.get_event_loop().run_until_complete(response).code)
 
 if __name__ == '__main__':

@@ -101,8 +101,7 @@ class Server(resource.Resource):
             return default_lifetime
 
     def _remove_client(self, location):
-        # TODO clarify how to remove the resource properly
-        self.site.add_resource((Server.get_path(), location), None)
+        self.site.remove_resource((Server.get_path(), location))
         self.client_persistence.delete_client_by_location(location)
 
     @staticmethod
