@@ -22,19 +22,30 @@ server implementation in Python 3.
 myLwM2M is licensed under the terms of [MIT License](LICENSE).
 
 ### ToDo
-* ~~Register/Update/Delete~~
-* Binding Modes (~~U~~/Q/S)
-* Security Modes (DTLS, PSK, Raw PKC, X.509, SMS Sec)
-* Device Management & Service Enablement:
-    * Read
-    * Write
-    * Execute
-    * WriteAttributes
-    * Observe
-    * Discover
-    * Create
-    * Delete
-* Bootstrap functionality
-* Documentation
-* OMA Tests Conformance
+- Session Management:
+    - [x] Register
+    - [x] Update
+    - [x] Delete
+- Binding Modes: 
+    - [x] U
+    - [ ] Q
+    - [ ] S
+- Security Modes
+    - [ ] DTLS
+    - [ ] PSK
+    - [ ] Raw PKC
+    - [ ] X.509
+    - [ ] SMS Sec
+- Device Management & Service Enablement:
+    - [ ] Read
+    - [ ] Write
+    - [ ] Execute
+    - [ ] Write Attributes
+    - [ ] Observe
+    - [ ] Discover
+    - [ ] Create
+    - [ ] Delete
+- Bootstrap functionality
+- Documentation
+- OMA Tests Conformance
 
