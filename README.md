@@ -5,47 +5,29 @@ myLwM2M - Lightweight M2M Server
 myLwM2M is an ongoing [LWM2M](https://github.com/OpenMobileAlliance/OMA-LwM2M-Public-Review) 
 server implementation in Python 3.
 
-### Requirements
-* [Python 3.4+](http://python.org/downloads/)
-* [aiocoap](https://github.com/chrysn/aiocoap) -- a [CoAP](http://coap.technology) framework
+### Prerequisites
+- [Python 3.4+](http://python.org/downloads/)
+- [aiocoap](https://github.com/chrysn/aiocoap) -- a [CoAP](http://coap.technology) framework
 
 ### Installation
-* After downloading and installing [Python 3.4+](http://python.org/downloads/),
+- After downloading and installing the prerequisites,
   use ``pip`` tool bundled with Python in order to install aiocoap:
-  ``pip install aiocoap`` (requires root priviledges) or
-  ``pip install aiocoap --user`` (user-local installation).
+    - ``pip install aiocoap`` (requires root privileges) or
+    - ``pip install aiocoap --user`` (user-local installation).
 * Install myLwM2M:
-  ``python setup.py install`` (requires root priviledges) or
-  ``python setup.py install --user`` (user-local installation).
+    - ``python setup.py install`` (requires root privileges) or
+    - ``python setup.py install --user`` (user-local installation).
+
+### Dev Mode
+You can use [OMA LWM2M DevKit](https://addons.mozilla.org/de/firefox/addon/oma-lwm2m-devkit/) for 
+testing/development. Just point it to ``coap://localhost:5683`` and load the "example client".
+You should notice console output like:
+```
+DEBUG:myLwM2M-server:POST called with options {'lt': '60', 'b': 'U', 'ep': 'DEVKIT'}
+```
 
 ### License
 myLwM2M is licensed under the terms of [MIT License](LICENSE).
 
 ### ToDo
-- Session Management:
-    - [x] Register
-    - [x] Update
-    - [x] Delete
-- Binding Modes: 
-    - [x] U
-    - [ ] Q
-    - [ ] S
-- Security Modes
-    - [ ] DTLS
-    - [ ] PSK
-    - [ ] Raw PKC
-    - [ ] X.509
-    - [ ] SMS Sec
-- Device Management & Service Enablement:
-    - [ ] Read
-    - [ ] Write
-    - [ ] Execute
-    - [ ] Write Attributes
-    - [ ] Observe
-    - [ ] Discover
-    - [ ] Create
-    - [ ] Delete
-- Bootstrap functionality
-- Documentation
-- OMA Tests Conformance
-
+See [TODO](TODO.md).
