@@ -45,7 +45,7 @@ class Server(resource.Resource):
         return "rd"
 
     @asyncio.coroutine
-    def render_POST(self, request):
+    def render_post(self, request):
         """
         This method is called on client registration.
         :param request:
@@ -139,7 +139,7 @@ class Server(resource.Resource):
         return response
 
     @asyncio.coroutine
-    def render_PUT(self, request):
+    def render_put(self, request):
         location = request.opt.uri_path[-1]
         self.log.debug("PUT called for location %s" % location)
         opts = dict(x.split("=") for x in request.opt.uri_query)
@@ -157,7 +157,7 @@ class Server(resource.Resource):
         return response
 
     @asyncio.coroutine
-    def render_DELETE(self, request):
+    def render_delete(self, request):
         location = request.opt.uri_path[-1]
         self.log.debug("DELETE called for location %s" % location)
         self._remove_client(location)
