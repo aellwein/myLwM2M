@@ -10,7 +10,8 @@ server implementation in Python 3.
 - [aiocoap](https://github.com/chrysn/aiocoap) -- a [CoAP](http://coap.technology) framework
 
 ### Installation
-You will currently need to install aiocoap manually. Here are the required steps:
+You will currently need to install [aiocoap](https://github.com/chrysn/aiocoap) manually.
+Here are the required steps:
   - Clone it using ``git clone https://github.com/chrysn/aiocoap.git``
   - ``python setup.py install`` (system wide installation, requires root privileges) or
   - ``python setup.py install --user`` (for user-local installation).
@@ -18,6 +19,8 @@ You will currently need to install aiocoap manually. Here are the required steps
 - Install myLwM2M:
     - ``python setup.py install`` (system wide, requires root privileges) or
     - ``python setup.py install --user`` (user-local installation).
+
+- Run using ``python run.py``.
 
 ### Dev Mode
 You can use [OMA LWM2M DevKit](https://addons.mozilla.org/de/firefox/addon/oma-lwm2m-devkit/) for 
