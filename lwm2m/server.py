@@ -182,6 +182,7 @@ class Server(resource.Resource):
         try:
             asyncio.get_event_loop().run_forever()
         except KeyboardInterrupt:
+            asyncio.get_event_loop().stop()
             self.log.debug("server stopped")
 
 
