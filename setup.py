@@ -10,5 +10,6 @@ setup(
     author="Alexander Ellwein",
     author_email="mylwm2m@ellwein.net",
     license="MIT License",
-    install_requires=["aiocoap"]
+    install_requires=["aiocoap"],
+    tests_require=["pytest"]
 )
