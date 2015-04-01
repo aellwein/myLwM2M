@@ -7,7 +7,6 @@ from setuptools.command.test import test as TestCommand
 
 
 class PyTest(TestCommand):
-    user_options = [('pytest-args=', 'a', "Arguments to pass to py.test")]
 
     def initialize_options(self):
         TestCommand.initialize_options(self)
@@ -28,7 +27,7 @@ class PyTest(TestCommand):
 
 setup(
     name="myLwM2M",
-    version="1.0.0",
+    version="1.0.0+git",
     description="Lightweight M2M server written in Python",
     author="Alexander Ellwein",
     author_email="mylwm2m@ellwein.net",
