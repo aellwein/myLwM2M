@@ -1,0 +1,9 @@
+/.idea
+/.eggs
+/*.egg-info
+/dist
+/build
+__pycache__/
+.cache/
+.coverage
+/htmlcov

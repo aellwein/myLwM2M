@@ -1,0 +1,4 @@
+aiocoap
+pytest
+coveralls
+https://github.com/behave/behave/archive/master.zip#egg=behave-1.2.6.dev0
